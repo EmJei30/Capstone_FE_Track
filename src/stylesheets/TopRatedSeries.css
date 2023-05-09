@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.seriesList{
+    width: 100%;
+    height: 55vh;
+    margin-top: 10px;
+    position: relative;
+    margin-top: -190px;
+    padding-top: 30px;
+}
+.listTitleSeries{
+    color: white;
+    height: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+.wrapperSeries{
+    position: relative;
+    height: 100px;
+}
+.SeriesContainer{
+    margin-left: 50px;
+    display: flex;  
+    transform: translateX(0px); 
+    transition: all 1s ease;
+}
+.sliderArrowSeries{
+    width: 50px;
+    height: 130px;
+    color: white;
+    background-color: rgb(22, 22, 22, .5);
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;   
+    margin-top: 55px; 
+}
+.left{
+    left: 0;
+}
+.right{
+   left: 1495px;
+}
+.arrow{
+    position: relative;
+    top: 5px
+}
+/*------trending movies----*/
+
+.listItemSeries{
+    width: 225px;
+    height: 150px;
+    margin-right: 5px;
+    position: relative;
+}
+.listItemSeries p{
+    position: absolute;
+    color: white;
+    z-index: 9;
+    top: 70px;
+    font-size: medium;
+    cursor: pointer;
+}
+.holderSeries{
+    position: relative;
+}
+.trendingImageSeries{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.holderSeries:hover {
+    opacity: .1;
+}
+
+/*----------overlay image---------*/
+.over-laySeries img{
+    width: 50px;
+    height: 50px;
+    margin: 0px auto;
+}
+.over-laySeries{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0px auto;
+    overflow: hidden;
+    width: 100%;
+    transition: transform .5s;
+    height:100%;
+    z-index: -1;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.over-laySeries:hover{
+    z-index: 1;
+}

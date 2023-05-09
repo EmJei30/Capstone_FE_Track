@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+
+}
+.SearchContainer{
+    width: 100%;
+    height:25vh;
+    background-size: cover;
+    background: rgb(black), .5;
+    z-index: 9;
+    position: relative;
+}
+.search{
+    width: 1500px;
+    height: 20vh;
+    display: flex;
+    padding-top: 100px;
+    display: block;
+    padding-left: 50px;
+}
+.search input{
+    width: 93%;
+    height: 30px;
+    display: flex;
+    outline: 0;
+    background-color: black;
+    border: none;   
+    border-bottom: 2px solid  white;    
+    color: wheat;
+    font-size: medium; 
+}
+label{
+    font-size: larger;
+    color: wheat;
+}
+
+/*-------search results-------*/
+.searchCon{
+    width:100%;
+    height: 50vh;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 1;   
+}
+.searchSubCon{
+    width:14%;
+    height: 200px;
+    margin: 20px 25px;
+    color: white;
+    position: relative;
+    display: block;
+}
+.searchSubCon .trendingImageTW{
+    width:80%;
+    height: 180px;
+    margin: 0px 10px;
+    border: 1px solid white;
+    color: white;
+    position: relative;    
+}
+.searchSubCon p{
+    height: 50px;
+    width: 80%;
+    margin-top: -3px;
+    text-align: center;
+}
+.searchSubCon h1{
+    width: 150px;
+    height: 150px;
+    color: white;
+}
+.noImage{
+    width:80%;
+    height: 180px;
+    margin: 0px 10px;
+    background-color: rgb(4, 4, 4);
+    color: rgb(236, 233, 233);
+    position: relative; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border: 1px solid white;
+}

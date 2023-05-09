@@ -1,0 +1,152 @@
+body{
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/images/bg.png'); */
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    background-color: black;
+   
+  }
+  .containerMovie{
+    position: relative;
+    height: 225vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .sliderMovie{
+    height: 200px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    z-index: 2;
+    bottom:240px;
+ 
+  }
+  .slider-trackMovie{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    width: calc(750px * 4);
+    animation: scroll 200s linear infinite;
+    position: relative;
+    cursor: pointer;
+  }
+  .slider-trackMovie:hover{
+    animation-play-state: paused;
+  }
+  @keyframes scroll{
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(calc(-750px *10));
+    }
+  }
+  .slideMovie{
+    height: 100%;
+    width: 750px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    perspective: 100px;
+  }
+  .featuredImg{
+    width: 100%;
+    transition: transform 1s;
+  }
+  .featuredImg:hover{
+   transform: translateZ(20px);
+  }
+  /* gradient shadow*/
+  
+  /* .slider::before, .slider::after{
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgb(255,255,255,0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+  } */
+  .slider::before{
+    left: 0;
+    top: 0;
+  }
+  .slider::after{
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+  }
+  /*------- movie trailer container*/
+.movieTrailerMovie{
+  width: 50%;
+  height: 98vh;
+  position: relative;
+  display: flex;
+  align-self: center;
+  margin: 10px 10px;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+}
+.playTrailerMovie{
+  color: white;
+  font-size: large;
+}
+.captionMovie{
+  width: 50%;
+  height: 200px;
+  color: white;
+  text-align: justify;
+  margin-left: 30px;
+}
+.playTrailerMovie{
+  width: 80px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.playTrailerMovie:hover{
+  background-color: white;
+  color: black;
+}
+.youtube-container{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.closeTrailer{
+  width: 80px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  z-index: 10;
+  font-size: medium;
+  left: 30px;
+}
+.closeTrailer:hover{
+  background-color: white;
+  color: black;
+}
+.trendingNow{
+  position: absolute;
+}
+.info{
+  position: absolute;
+  margin-left: 10px;
+  cursor: pointer;
+}

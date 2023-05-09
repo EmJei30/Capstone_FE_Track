@@ -1,0 +1,372 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Candal, sans-serif;
+}
+.signInContainer{
+    width: 100%;
+    position: absolute;
+    height: 98vh;
+    left: 0;
+    top: 0;
+    background-color: rgb(241, 240, 243);
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.signInForm{
+    position: relative;
+    margin: 0px auto;
+    width: 40%;
+    height: 75%;
+    background-color: rgb(241, 240, 243);
+}
+.signInForm div{
+    margin: 0px auto;
+    width: 70%;
+    margin-bottom: 20px;
+}
+.logo{
+    width: 100%;
+    height: 90px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 250px;
+    height: 120px; 
+}
+.signinText{
+    font-size: medium;
+    font-weight:bolder;
+    height: 50px;
+    color: rgb(92, 92, 189);
+}
+.signInEmail{
+    font-size: medium;
+    font-weight: 100;
+    height: 70px;
+    color: rgb(98, 98, 101);
+    display: block;
+    margin-top:50px ;
+}
+.signInEmail label{
+    width: 90%;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;    
+}
+.signInEmail .SignInEmail{
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(184, 178, 178);
+    background-color: rgb(241, 240, 243);
+}
+.SingInemailError{
+    width: 100%;    
+    height: 35px;
+    outline: none;
+    border: none;
+    color: rgb(178, 33, 33);
+    border-bottom: 1px solid  rgb(178, 33, 33);
+    background-color: rgb(241, 240, 243);
+}
+.signInPassword{
+    font-size: medium;
+    font-weight: 100;
+    height: 80px;
+    color: rgb(98, 98, 101);
+    display: block;
+    margin-top:50px ;
+    position: relative;
+}
+.signInPassword label{
+    width: 90%;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;    
+}
+.signInPassword div{
+    width: 100%;
+    position: relative;
+}
+.inputPassword .SignInPassword{
+    width: 88%;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(184, 178, 178);
+    background-color: rgb(241, 240, 243);
+}
+.inputPassword .SignInPasswordError{
+    width: 88%;
+    height: 35px;
+    outline: none;
+    border: none;
+    color: rgb(178, 33, 33);
+    border-bottom: 1px solid  rgb(178, 33, 33);
+    background-color: rgb(241, 240, 243);
+}
+.SignInPassword{
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 100;
+    color: rgb(124, 130, 130);
+    height: 30px;
+}
+.SignInPasswordError{
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 100;
+    color: rgb(178, 33, 33);;
+    height: 30px;
+}
+
+.signInPassword .showPassword{
+    width: 11%;
+    float: right;
+    height: 37px;
+    color: rgb(97, 97, 239);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(184, 178, 178);
+   cursor: pointer;
+}
+.signInPassword .showPasswordError{
+    width: 11%;
+    float: right;
+    height: 37px;
+    color: rgb(97, 97, 239);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid  rgb(178, 33, 33);
+    cursor: pointer;
+}
+.errorMsg1{
+    position: relative;
+    bottom: 30px;
+    padding-top: 18px;
+    font-size: 13px;
+    font-style: italic;
+    color: rgb(178, 33, 33);
+}
+.inputPassword .errorMsg3{
+    position: relative;
+    bottom: 10px;
+    padding-top:10px; 
+    font-size: 13px;
+    font-style: italic;
+    color: rgb(178, 33, 33);
+}
+.forgotPass{
+    color: rgb(104, 104, 236);
+    font-size: small;
+    cursor: pointer;
+}
+.signUpBtn{
+    color: rgb(74, 72, 72);
+    font-size: small;
+    padding-top: 10px;
+}
+.signUp{
+    color: rgb(104, 104, 236);
+    font-size: small;
+    cursor: pointer;
+    text-decoration: none;
+}
+.signUp:hover, .forgotPass:hover {
+   text-decoration: underline;
+}
+.SignInBtn{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.SignInBtn .enabled{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px ;
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(56,153,238);
+    border: 1px solid rgb(56,153,238);
+}
+.SignInBtn .enabled:hover{ 
+    color: white;
+    background-color: rgb(56,153,238);
+    cursor: pointer;
+}
+.SignInBtn .disabled{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px ;
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(178, 182, 186);
+    border: 1px solid rgb(178, 182, 186);
+}
+.SignInBtn .disabled:hover{ 
+    cursor: not-allowed;
+}
+.updateBtn .enabled{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px ;
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(56,153,238);
+    border: 1px solid rgb(56,153,238);
+}
+.updateBtn .enabled:hover{ 
+    color: white;
+    background-color: rgb(56,153,238);
+    cursor: pointer;
+}
+.updateBtn .disabled{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px ;
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(178, 182, 186);
+    border: 1px solid rgb(178, 182, 186);
+}
+.updateBtn .disabled:hover{ 
+    cursor: not-allowed;
+}
+/*---------Pop Up modal-------------*/
+.modal .overlay1{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+.overlay1{
+    background: rgba(49, 49, 49, 0.8);
+    padding-top: 80px ;
+}
+.popUp{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 430px;
+    height: 360px;
+    padding: 0px 20px 0px 40px;
+     background-color: rgb(255, 255, 255);
+}
+.popUp .closeBtn{
+    height: 40px;
+    display: flex;
+    justify-content: right;
+    align-items:flex-end;
+
+}
+.popUp .updateText{
+    font-size: medium;
+    font-weight:bolder;
+    height: 50px;
+    color: rgb(92, 92, 189);
+}
+.popUp .popUptext span{
+    font-size: medium;
+    color: rgb(91, 88, 88);
+
+}
+.popUp .popUpEmail{
+    font-size: small;
+    font-weight: bold;
+    height: 60px;
+    color: rgb(98, 98, 101);
+    display: block;
+    margin-top:30px ;
+}
+.popUp .popUpEmail input{
+    width: 95%;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(184, 178, 178);
+}
+.closeBtn{
+    cursor: pointer;
+    color: rgb(56,153,238);
+}
+.updateBtn{
+    width: 415px;
+    height: 100px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.updateBtn label{
+    width: 90%;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;    
+}
+.updateBtn .update:hover{ 
+    color: white;
+    background-color: rgb(56,153,238);
+}
+.popUpEmail .enterEmail{
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(184, 178, 178);
+    background-color: rgb(252, 250, 255);
+}
+.enterEmailError{
+    width: 100%;    
+    height: 35px;
+    outline: none;
+    border: none;
+    color: rgb(178, 33, 33);
+    border-bottom: 1px solid  rgb(178, 33, 33);
+    background-color: rgb(252, 250, 255);
+}
+.errorMsg4{
+    position: relative;
+    bottom: 30px;
+    padding-top: 18px;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(178, 33, 33);
+}
+.signInForm label, .updateText label{
+    color: rgb(142, 142, 230);
+}
+.signInEmail label, .signInPassword label, .popUpEmail label{
+    color: grey;
+}
+.SignInBtn .back{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px ;
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(56,153,238);
+    border: 1px solid rgb(56,153,238);   
+    margin-left: 20px;
+
+}
+.SignInBtn .back:hover{ 
+    color: white;
+    background-color: rgb(56,153,238);
+    cursor: pointer;
+}

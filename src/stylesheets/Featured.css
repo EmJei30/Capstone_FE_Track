@@ -1,0 +1,300 @@
+
+.featuredContainer{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;  
+    background-color: rgb(14,25,38);  
+    height: 3700px;
+}
+.sub-Con{
+    width:100%;
+    height: 100vh;
+    display: inline-block;
+    overflow: hidden;
+}
+.featuredCover{
+    width: 100%;
+    height: 100%;
+}
+
+/*----do something new----------*/
+.featuredMovies{
+    width:100%;
+    height: 95vh;
+    padding-top: 40px;
+    background-color: rgb(14,25,38);
+    margin-top: auto;
+  
+    position: relative;
+}
+.new{
+    text-align: center;
+    color: white;
+}
+.slider{
+    height: 550px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    padding-top: 80px;
+  }
+  .slider-track{    
+    height: 50%;
+    width: 500px;
+    display: flex;
+    width: calc(250px * 20);
+    animation: scroll 40s linear infinite;
+  }
+  .slider-track:hover{
+    animation-play-state: paused;
+  }
+  @keyframes scroll{
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(calc(-250px *10));
+    }
+  }
+  .slide{
+    height: 40%;
+    width: 120%;
+    display: flex;
+    align-items: center;
+    padding: 25px 15px;
+    perspective: 100px;    
+  }
+  .slide-con{
+    position: relative;
+    overflow: hidden;
+    transition: .8s;
+    width: 300px;
+    margin: 0px 5px;
+  }
+  .slide-con:hover{
+    z-index: 1;
+    transform: scale(1.2);
+  }
+  .imageDiv{
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+  }
+  .featuredImg{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform .8s;
+    background-color: red;
+    
+  }
+  .slide-con:hover .featuredImg{
+   transform: scale(1.15);
+   background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  }
+  .overlay{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: transform .5s;
+    height: 0%;
+    color: rgb(86, 145, 211)
+}
+
+  .slide-con:hover .overlay{
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,0,0,0), rgb(12, 10, 10,1));
+  }
+  .overlayText{
+    position: relative;
+    top: 380px;
+    font-size: large;
+    font-weight: bold;
+    margin: 0px 20px;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+  .overlay img{
+    width: 30px;
+    position: relative;
+    top: 3px;
+    right: 3px;
+  }
+  .slider::before{
+    left: 0;
+    top: 0;
+  }
+  .slider::after{
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+  }
+  /*-------banner-------*/
+  .banner{
+    width: 100%;
+    height: 95vh;
+    padding-top: 50px;
+    /* background-color: rgb(7,12,18); */
+    background: linear-gradient(to bottom, rgb(14,25,38,1), rgb(7,12,18,1));
+  
+    text-align: center;
+  }
+  .banner h1{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+  .banner h2{
+    color: rgb(175, 172, 172);
+    text-align: center;
+    font-size: 23px;
+    font-weight: 300;
+  }
+.banner img{
+    width: 50%;
+}
+.banner2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 85vh;
+    padding-top: 50px;
+    text-align: center;
+    background: linear-gradient(to bottom,  rgb(7,12,18,1), rgb(4,7,10,1));
+  }
+.ban1{
+    position: relative;
+    width: 40%;
+    height: 95%; 
+
+}
+.ban2{
+    position: relative;
+    width: 40%;
+    height: 100%; 
+    bottom: 12px;
+}
+.banner3{
+    background-color: white;
+    color: black;
+    width: 100%;
+    height:70vh;
+
+}
+.banner3 h1{
+    width: 100%;
+    text-align: center;
+    margin: 70px 0px;
+    font-size: 35px;
+    float: left;
+}
+.banner3 .h2{
+   width: 230px;
+    font-size: 30px;
+    font-weight: 500;
+    height: 2%;
+    margin: 0px auto;
+}
+.banner3 .h3{
+    width: 230px;
+    font-size: 20px;
+    font-weight: 500;
+    height: 2%;
+    margin: 0px auto;
+}
+.banner3 .h4{
+    width: 230px;
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+    height: 2%;
+    margin: 0px auto;
+}
+.banner3 .img{
+    width: 230px;
+    font-size: 17px;
+    font-weight: 400;
+    color: gray;
+    height: 2px;
+    margin: 0px auto;
+}
+.banner3 div{
+    position: relative;
+    border: 3px;
+    width: 350px;
+    height: 250px;
+    display: inline-block;
+    margin: 40px 20px;
+    padding: 20px 20px;
+    border-radius: 20px;  
+}
+.banner3 .planContainer{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    line-height: .5;
+    padding-top: 20px;
+    box-shadow: none;
+   
+}
+
+.plan1,  .plan2, .plan3{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.plan1:hover,  .plan2:hover, .plan3:hover{
+    transition:  .5s;
+    box-shadow: none;
+    box-shadow: 0 4px 8px 0 rgba(43, 55, 190, 1), 0 6px 20px 0 rgba(55, 68, 209, 1);
+    color:  rgba(55, 68, 209, .8);
+}
+.plan1 img{
+    position: absolute;
+    left: 180px;
+    width: 90px;
+}
+.banner3 a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+.banner4{
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+}
+.banner4 div{
+  float: left;
+  height: 80px;
+  display: flex;
+  margin: 0px 5px;
+}
+.banner4 h1{
+    width: 300px;
+    display: inline-block;
+    height: 50px;
+    padding: 20px 0px;
+    vertical-align: top;
+    border-right:2px solid black ;
+    margin-right: 40px;
+}
+.banner4 img{
+    width: 160px;
+    display: inline-block;
+    margin: 0px 20px;
+}

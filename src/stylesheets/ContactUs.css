@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Candal, sans-serif;
+}
+.aboutUsContainer{
+    width: 100%;
+    position: absolute;
+    height: 105vh;
+    left: 0;
+    top: 0;
+    background-color: rgb(241, 240, 243);
+    display: flex;
+    justify-content: left;
+    z-index: 3;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.aboutusForm{
+    position: relative;
+    left: 250px;
+    width: 50%;
+    height: 75%;
+    background-color: rgb(241, 240, 243);
+}
+.aboutusForm div{
+    margin: 0px auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.logo{
+    width: 100%;
+    height: 90px; 
+    
+}
+
+.settingBtn .btn{
+    position: relative;
+    top:20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px ;
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(56,153,238);
+    border: 1px solid rgb(56,153,238);
+    
+}
+.settingBtn .btn:hover{ 
+    color: white;
+    background-color: rgb(56,153,238);
+    cursor: pointer;
+}
+.sideBar{
+    height: 40%;
+    width: 10%;
+    padding-left: 60px;
+    padding-top: 100px;
+    display: block;
+}
+.sideBar label{
+    color: rgb(142, 142, 230);
+}
+.aboutusCon span{
+    display: block;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 100;
+    color: rgb(164, 161, 161);
+}
+.aboutusCon{
+    width: 100%;
+}
+.aboutusCon label{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    line-height:.1;
+    margin-left: -5px;
+}
+.aboutusCon p{
+    position: relative;
+    top: 10px;
+    font-size: medium;
+    color: rgb(12, 12, 12);
+}
+.homeBtn .back{
+    position: relative;
+    top:20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px ;
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(56,153,238);
+    border: 1px solid rgb(56,153,238);   
+}
+.homeBtn .back:hover{ 
+    color: white;
+    background-color: rgb(56,153,238);
+    cursor: pointer;
+}
+.aboutUsContainer{
+    font-size: medium;
+}
+.aboutusCon ul{
+    background-color: red;
+    width: 100%;
+}
+.aboutusCon .aboutList{
+    line-height: .5;
+    font-size: 15px;
+    color: rgb(164, 161, 161);
+    width: 100%;
+    margin-left: 25px;
+}

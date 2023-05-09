@@ -1,0 +1,28 @@
+
+features
+Allows the user to browse and watch movies of their choice.
+
+capstone demo
+
+
+Good morning everyone, today I will present my capstone which i reinvented A known movie website , the HBO GO asia.
+
+On my screen you can see the landing page, when you scroll down, you can see the featured movies, lets select one movie, upon clicking, we are redirected to movie preview page, but we cant play the video because we haven't subscribe yet, so lets go back for now,
+
+upon scrolling down, we have here some banners and also their subscribe plan. ok let go to the browser tab,
+
+and we are redirected to home page, here in home page we can see the latest movies,you can also choose which one to be appeard on full screen, we can toggle on the movie information and we can play also the trailer as well.
+
+then upon scrolling we can see the list of other trending and popular movies, we can also click those and redirected to movie preview
+
+on series tab and movie tab, It has the same fuctionalities as the home page
+
+we have also here our setting page, so here we have the system info, and the contact infos as well,
+
+
+then lets go to search movies, here we can go to sign in or sign up page.
+
+let sign up first, as you can see upon typing we have validation message already , and the submit button also disabled, and it can only be enabled when you pass all the validations, ok we have successfully register and lets log in, lets try the validation first, wen it success, it will redirect to home page, in here we have the same environment just like we when we browse the earlier and we can see the account tab, so here it is. And now we can preview our selected movies as we subscribe. and thats it for this presentation and thank you guys.
+
+
+

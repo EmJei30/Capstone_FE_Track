@@ -1,0 +1,286 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Candal, sans-serif;
+}
+.signUpContainer{
+    width: 100%;
+    position: absolute;
+    height: 115vh;
+    left: 0;
+    top: 0;
+    background-color: rgb(241, 240, 243);
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.signUpForm{
+    position: relative;
+    margin: 0px auto;
+    width: 40%;
+    height: 75%;
+    background-color: rgb(241, 240, 243);
+}
+.signUpForm div{
+    margin: 0px auto;
+    width: 70%;
+    margin-bottom: 20px;
+}
+.logo{
+    width: 100%;
+    height: 90px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 250px;
+    height: 120px; 
+}
+.signUpText{
+    font-size: medium;
+    font-weight:bolder;
+    height: 30px;
+    color: rgb(92, 92, 189);
+}
+.signUpEmail{
+    font-size: medium;
+    font-weight: 100;
+    height: 70px;
+    color: rgb(98, 98, 101);
+    display: block;
+    margin-top:50px ;
+}
+.signUpEmail label{
+    width: 90%;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;    
+}
+.signUpEmail .emailInput{
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(184, 178, 178);
+    background-color: rgb(241, 240, 243);
+}
+.signUpPassword{
+    font-size: medium;
+    font-weight: 100;
+    height: 70px;
+    color: rgb(98, 98, 101);
+    display: block;
+    margin-top:50px ;
+    position: relative;
+}
+.signUpName{
+    font-size: medium;
+    font-weight: 100;
+    height: 70px;
+    color: rgb(98, 98, 101);
+    display: block;
+    margin-top:30px ;
+    position: relative;
+}
+.signUpPassword label{
+    width: 90%;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;    
+}
+.signUpName label{
+    width: 90%;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;    
+}
+.signUpPassword div{
+    width: 100%;
+    position: relative;
+}
+.signUpName div{
+    width: 100%;
+    position: relative;
+}
+.inputPassword .passwordInput{
+    width: 88%;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(184, 178, 178);
+    background-color: rgb(241, 240, 243);
+}
+.inputName .nameInput{
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(184, 178, 178);
+    background-color: rgb(241, 240, 243);
+}
+
+.signUpPassword .showPassword{
+    width: 11%;
+    float: right;
+    height: 37px;
+    color: rgb(97, 97, 239);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(184, 178, 178);
+   cursor: pointer;
+}
+.signUpBtn{
+    color: rgb(74, 72, 72);
+    font-size: small;
+    padding-top: 10px;
+}
+.signIn{
+    color: rgb(104, 104, 236);
+    font-size: small;
+    cursor: pointer;
+    text-decoration: none;
+}
+.signIn:hover{
+    text-decoration: underline;
+}
+.submitBtn{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.submitBtn .enabled{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px ;
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(56,153,238);
+    border: 1px solid rgb(56,153,238);
+}
+.submitBtn .disabled{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px ;
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(178, 182, 186);
+    border: 1px solid rgb(178, 182, 186);
+}
+.submitBtn .enabled:hover{ 
+    color: white;
+    background-color: rgb(56,153,238);
+    cursor: pointer;
+}
+.submitBtn .disabled:hover{
+    cursor: not-allowed;
+}
+.passwordText{
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 100;
+    color: rgb(124, 130, 130);
+    height: 30px;
+}
+.passwordTextError{
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 100;
+    color: rgb(178, 33, 33);;
+    height: 30px;
+}
+.termsCon{
+    height: 15px;
+    padding-top: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(104, 108, 108);
+    line-height: 1px;
+}
+.sendUpdates{
+    padding-bottom: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(104, 108, 108);
+    line-height: 1px;
+}
+.terms, .policy{
+    text-decoration: none;
+    color: rgb(56,153,238);
+}
+.terms:hover, .policy:hover{
+    text-decoration: underline;
+}
+.errorMsg2{
+    position: relative;
+    bottom: 20px;
+    padding-top: 10px; 
+    font-size: 13px;
+    font-style: italic;
+    color: rgb(178, 33, 33);
+}
+.nameInputError{
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    color: rgb(178, 33, 33);
+    border-bottom: 1px solid  rgb(178, 33, 33);
+    background-color: rgb(241, 240, 243);
+}
+.emailInputError{
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    color: rgb(178, 33, 33);
+    border-bottom: 1px solid  rgb(178, 33, 33);
+    background-color: rgb(241, 240, 243);
+}
+.inputPassword .passwordInputError{
+    width: 88%;
+    height: 35px;
+    outline: none;
+    border: none;
+    color: rgb(178, 33, 33);
+    border-bottom: 1px solid  rgb(178, 33, 33);
+    background-color: rgb(241, 240, 243);
+}
+.signUpPassword .showPasswordError{
+    width: 11%;
+    float: right;
+    height: 37px;
+    color: rgb(97, 97, 239);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid  rgb(178, 33, 33);
+    cursor: pointer;
+}
+.signUpText label{
+    color: rgb(142, 142, 230);
+}
+.signUpName label, .signUpEmail label, .signUpPassword label, .termsCon label, .sendUpdates label{
+    color: grey;
+}
+.submitBtn .back{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px ;
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(56,153,238);
+    border: 1px solid rgb(56,153,238);   
+    margin-left: 20px;
+
+}
+.submitBtn .back:hover{ 
+    color: white;
+    background-color: rgb(56,153,238);
+    cursor: pointer;
+}
